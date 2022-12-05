@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <title>colelamers</title>
+  <meta charset="utf-8">
+  <meta property="og:site_name" content="ColeLamers">
+  <meta property="og:title" content="Cole Lamers' Website">
+  <meta property="og:url" content="http://www.colelamers.com">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="http://www.colelamers.com">
+  <meta itemprop="name" content="colelamers">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Cole Lamers">
+  <meta name="description" content="Cole Lamers is a C#.NET programmer with a BS Comp Sci major, working on a Masters, in the Midwest, who also makes pottery, plays guitar, and sort of wings everything else.">
+  <meta name="keywords" content="Cole Lamers colelamers cole lamers colespottery.com colelamers.com blog">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ 
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+  <link rel="stylesheet" href="./css/colelamers.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+  <header> </header>
+
+    <!-- Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="container">
+    <div class="four columns">
+      <div class="row">
+        <a href="./index.html"><button>Home</button></a>
+      </div>
+    </div>
+    <div class="four columns">
+      <div class="row">
+        <a href="./Archive.html"><button>Archive</button></a>
+      </div>
+    </div>
+    <div class="four columns">
+      <div class="row">
+        <a href="./About.html"><button>Wer Bin Ich</button></a>
+      </div>
+    </div>
+    <!-- go decrese column number to add more columns (skeleton css is backwards but whatever)
+    <div class="four columns">
+      <div class="row">
+        <a href="./UberMich.html"><button>UberMich</button></a>
+      </div>
+    </div>
+  -->
+  </div>
+
+  <div id="otherSites">
+    <a href="http://colespottery.com">ColesPottery.com</a>
+    <a href="https://github.com/colelamers">Github</a>
+    <a href="https://www.linkedin.com/in/colelamers/">LinkedIn</a>
+    <a href="mailto:colelamers@gmail.com">Email Me</a>
+  </div>
+
+
+    <!-- Content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="container">
+    <div class="one.column" style="margin-top: 10%; margin-bottom: 25%;">
+      <div id="question"></div>
+
+      <div class="dateTitle">
+        <h4>First Entry</h4>
+      </div>
+      <ul>
+          <h6 style="color: crimson;">2022-11-24</h6>
+          <p>
+            This is my first page. Hooray, and now officially I'm a blogger on the super cheap too.
+          </p>
+          <p>
+            Anyway, the purpose of this is just to have my little home on the internet that isn't locked behind an account, no need for major social media, you can view it whenever, and hopefully I help you get through the monotonous chore of having an existential millenial crisis at the ripe old age of 28.
+          </p>
+          <p>
+            To you techy people, how did I build this? Actually I just found some dude that made <a href="http://www.getskeleton.com">Skeleton</a> as some boilerplate css for me to make a super simple grid web page. Why build a new website when FOSS can save you more time now (and then spend another 10 hours tweaking it). It does have javascript just for the quotes and questions at the top but that's not really the main point of the site. I do like having those as a place I can point to and look at from time to time.
+          </p>
+          <p>
+            Hopefully this video below will be our future:
+          </p>
+          <p class="mediaCenterChildTag">
+            <iframe width="500" height="240" src="https://www.youtube.com/embed/aN8wxQDqfRk" title="Spaceballs 2: The Search for More Money" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </p>
+      </ul>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+
+<script>
+  let listOfQuestions = [
+    "Given the choice of anyone in the world, whom would you want as a dinner guest?","Would you like to be famous? In what way?",
+    "Before making a telephone call, do you ever rehearse what you are going to say? Why?",
+    "What would constitute a 'perfect' day for you?",
+    "When did you last sing to yourself? To someone else?",
+    "If you were able to live to the age of 90 and retain either the mind or body of a 30-year-old for the last 60 years of your life, which would you want?",
+    "Do you have a secret hunch about how you will die?",
+    "Name three things you and your partner appear to have in common",
+    "For what in your life do you feel most grateful?",
+    "If you could change anything about the way you were raised, what would it be?",
+    "Take four minutes and tell your partner your life story in as much detail as possible",
+    "If you could wake up tomorrow having gained any one quality or ability, what would it be?",
+    "If a crystal ball could tell you the truth about yourself, your life, the future or anything else, what would you want to know?",
+    "Is there something that you've dreamed of doing for a long time? Why haven't you done it?",
+    "What is the greatest accomplishment of your life?",
+    "What do you value most in a friendship?",
+    "What is your most treasured memory?",
+    "What is your most terrible memory?",
+    "If you knew that in one year you would die suddenly, would you change anything about the way you are now living? Why?",
+    "What does friendship mean to you?",
+    "What roles do love and affection play in your life?",
+    "Alternate sharing something you consider a positive characteristic of your partner - Share a total of five items",
+    "How close and warm is your family? Do you feel your childhood was happier than most other people's?",
+    "How do you feel about your relationship with your mother?",
+    "Make three true 'we' statements each, For instance, 'We are both in this room feeling ..'",
+    "Complete this sentence: 'I wish I had someone with whom I could share ..",
+    "If you were going to become a close friend with your partner, what would be important for them to know?",
+    "Tell your partner what you like about them; be very honest this time, saying things that you might not say to someone you've just met",
+    "What is an an embarrassing moment in your life?",
+    "When did you last cry in front of another person? By yourself?",
+    "Tell your partner something that you like about them already",
+    "What, if anything, is too serious to be joked about?",
+    "If you were to die this evening with no opportunity to communicate with anyone, what would you most regret not having told someone? Why haven't you told them yet?",
+    "Your house, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item.What would it be? Why?",
+    "Of all the people in your family, whose death would you find most disturbing? Why?",
+    "Share a personal problem and ask your partner's advice on how he or she might handle it. Also, ask your partner to reflect back to you how you seem to be feeling about the problem you have chosen."
+  ];
+  let listOfQuotes = [
+    "If the rule you followed, brought you to this, of what use was the rule?", // Javier Bardem in No Country For Old Men
+    "Three men can keep a secret if two of them are dead.", 
+    "Beginning is easy; Continuing is hard.", // shogun 2
+    "Better to remain silent and be thought a fool than to speak and to remove all doubt.",  // bible
+    "He who asks a question is a fool for five minutes; he who does not ask a question remains a fool forever.", // bible
+    "There is not a man who does not get senile by the time he reaches sixty. And when one thinks that he will not be senile, he is already so.", // shogun 2
+    "Do not think you will necessarily be aware of your own enlightenment.", // shogun 2
+    "Encourage and listen well to the words of your subordinates. It is well known that gold lies hidden underground.", // shogun 2
+    "The past is passed, the future is now", // Christopher Walken in Joe Dirt
+    "There are only two kinds of programming languages: the ones people complain about and the ones nobody uses.", // Bjarne Stroustrup
+    "Careful, Icarus, that you don't fly too close to the sun.", // me
+    "Even the monkeys stood upright at some point.", // David in Alien Covenant
+    "It behooves oneself to keep his wits.", // Brad Pitt in Inglorious Basterds
+    "We hear a story too good to be true... it ain't.", // Brad Pitt in Inglorious Basterds
+    "When one note is off, it eventually destroys the whole symphony.", // Michael Fassebender in Alien Covenant
+    "A person is smart. People are dumb, panicky dangerous animals and you know it.",
+    "The more you know who you are, and what you want, the less you let things upset you.", // Bill Murray in Lost in Translation
+    "It's a double pleasure to deceive the deceiver.", // Niccolo Machiavelli
+    "I'm sorry darling. This is the game.", // James McAvoy in Atomic Blonde
+    "People are liars, snakes, and thieves. You can never know who to trust.", // me
+    "Be like water making its way through cracks. Do not be assertive, but adjust to the object, and you shall find a way around or through it. If nothing within you stays rigid, outward things will disclose themselves...Be water, my friend.", // Bruce Lee
+    "It's in my nature.", // Scorpion to the frog
+    "Never attribute to malice that which is adequately explained by incompetence.",
+  ];
+
+  appendToHtml(listOfQuestions, 
+               "Question",
+               "font-size: 16px; color:lightblue; margin-bottom: 24px;");
+
+  appendToHtml(listOfQuotes, 
+               "Quote",
+               "font-size: 16px; color:lightsalmon; margin-bottom: 24px;");
+
+  function appendToHtml(listOfStrings, title, style){
+    let index = Math.floor((Math.random() * listOfStrings.length));
+    let jsHtmlQuestion = '<span style="' + style + '">' 
+                         + title + ' -- ' + listOfStrings[index] 
+                         + "</span>";
+
+    let parser = new DOMParser();
+    let doc = parser.parseFromString(jsHtmlQuestion, 'text/html');
+    let html = doc.body.childNodes[0];
+    let appendNode = document.getElementById("question")
+                             .insertAdjacentElement("afterbegin", html);
+  }
+
+
+</script>
+
+</html>

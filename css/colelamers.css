@@ -59,12 +59,10 @@ td > a > button {
   text-align: center;
 }
 
-#otherSites > a {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-#otherSites > a {
+#otherSites > a,
+#otherSites > div > div > a {
+  /* margin-left: 10px;
+  margin-right: 10px; 2023-04-12 removed */
   color: #fe0;
 }
 

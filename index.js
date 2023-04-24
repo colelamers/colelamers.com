@@ -167,7 +167,12 @@ let listOfQuotes = [
   "A fool and his money are soon to part.", 
   "Life without an object to pursue is a languid and tiresome thing.", // Sir Francis Bacon
   "If a cluttered desk is a sign of a cluttered mind, of what, then, is an empty desk a sign?", // Albert Einstein
-  
+  "All that matters is that I survive.",
+  "Men have less scruple in offending one who is beloved than one who is feared, for love is preserved by the link of obligation which, owing to the baseness of men, is broken at every opportunity for their advantage; but fear preserves you by a dread of punishment which never fails.", // Niccolo Machiavelli from the Prince
+  "He will win who knows how to handle both superior and inferior forces.", // Sun Tzu from the Art of War
+  "It is better not to become acquainted with men about whom you have formerly had doubts. No matter what you do, they will be people by whom you will be tripped up or taken in.", // Yamamoto Tsunetomo
+  "To give a person an opinion one must first judge well whether that person is of the disposition to receive it or not.", // Yamamoto Tsunetomo
+  "When someone is giving you his opinion, you should receive it with deep gratitude even though it is worthless. If you don't, he will not tell you the things that he has seen and heard about you again.", // Yamamoto Tsunetomo
 ];
 
 

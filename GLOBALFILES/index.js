@@ -173,6 +173,7 @@ let listOfQuotes = [
   "It is better not to become acquainted with men about whom you have formerly had doubts. No matter what you do, they will be people by whom you will be tripped up or taken in.", // Yamamoto Tsunetomo
   "To give a person an opinion one must first judge well whether that person is of the disposition to receive it or not.", // Yamamoto Tsunetomo
   "When someone is giving you his opinion, you should receive it with deep gratitude even though it is worthless. If you don't, he will not tell you the things that he has seen and heard about you again.", // Yamamoto Tsunetomo
+  "Who am I to deny an audience with the King?",
 ];
 
 

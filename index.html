@@ -39,58 +39,62 @@
 
   <!-- CSS
   ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-  <link rel="stylesheet" href="./GLOBALFILES/normalize.css">
-  <link rel="stylesheet" href="./GLOBALFILES/skeleton.css">
-  <link rel="stylesheet" href="./GLOBALFILES/colelamers.css">
+  <link rel="stylesheet" href="./g/normalize.css">
+  <link rel="stylesheet" href="./g/skeleton.css">
+  <link rel="stylesheet" href="./g/colelamers.css">
 
 </head>
 
 <body>
   <header> </header>
 
-  <!-- Header 
-  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <!-- Header 
+ ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 
-  <div class="container">
-    <div class="four columns">
+ <div class="container">
+  <div class="four columns">
       <div class="row">
-        <a href="./index.html"><button>Home</button></a>
+          <a href="./index.html"><button>Home</button></a>
       </div>
-    </div>
-    <div class="four columns">
-      <div class="row">
-        <a href="./Archive/Archive.html"><button>Archive</button></a>
-      </div>
-    </div>
-    <div class="four columns">
-      <div class="row">
-        <a href="./About/About.html"><button>Wer Bin Ich</button></a>
-      </div>
-    </div>
   </div>
+  <div class="four columns">
+      <div class="row">
+          <a href="./a/Archive.html"><button>Archive</button></a>
+      </div>
+  </div>
+  <div class="four columns">
+      <div class="row">
+          <a href="./p/Pottery.html"><button>Pottery</button></a>
+      </div>
+  </div>
+  <!--
+      If you need to expand to a fifth, add this and make it "two columns"
+  <div class="two columns">
+      <div class="row">
+          <a href="../About/About.html"><button>fifth</button></a>
+      </div>
+  </div>
+  
+  -->
+</div>
 
-  <div class="container" id="otherSites">
-    <div class="three columns">
+<div class="container" id="otherSites">
+  <div class="four columns">
       <div class="row">
-        <a href="http://colespottery.com">ColesPottery.com</a>
+          <a href="https://github.com/colelamers">Github</a>
       </div>
-    </div>
-    <div class="three columns">
-      <div class="row">
-        <a href="https://github.com/colelamers">Github</a>
-      </div>
-    </div>
-    <div class="three columns">
-      <div class="row">
-        <a href="mailto:colelamers@gmail.com">Email Me</a>
-      </div>
-    </div>
-    <div class="three columns">
-      <div class="row">
-        <a href="https://www.amazon.com/Lonerism-Thriving-Modern-World-Alone/dp/B0BZF9NFQJ/"><button class="glowButton">Buy my book!</button></a>
-      </div>
-    </div>
   </div>
+  <div class="four columns">
+      <div class="row">
+          <a href="mailto:colelamers@gmail.com">Email Me</a>
+      </div>
+  </div>
+  <div class="four columns">
+      <div class="row">
+          <a href="https://www.amazon.com/Lonerism-Thriving-Modern-World-Alone/dp/B0BZF9NFQJ/"><button class="glowButton">Buy my book!</button></a>
+      </div>
+  </div>
+</div>
 
   <!-- Quote Table and Featured Article
   ––––––––––––––––––––––––––––––––––––––––––––––––––-->
@@ -196,7 +200,7 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 
 </body>
-<script src="./GLOBALFILES/index.js">
+<script src="./g/index.js">
 
   AppendToHtml(listOfQuotes, "Quote");
 </script>

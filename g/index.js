@@ -49,7 +49,7 @@ let listOfQuotes = [
   "Separate the wheat from the chaff.", // bible
   "The man who runs away, fights again.", // Menander
   "The wise man speaks because he has something to say, the fool because he has to say something.", // Aristotle
-  "Those who can, do; Those who can't, teach. And those who can't teach? Well, they end up as your manager.",
+  "Those who can, do; Those who can't, teach. And those who can't teach, end up as your manager.",
   "The road to wisdom is paved with pain.",
   "The path to hell is paved with good intentions.",
   "No good deed goes unpunished.",
@@ -102,7 +102,7 @@ let listOfQuotes = [
   "Prayer and meditation does not solve your problems, it just wastes the time that could be used to solve your problems.",
   "The surest way to remain poor is to be an honest man.", // Napoleon Bonaparte
   "Time heals all wounds.",
-  "Lead me, follow me, or get the hell out of my way.", // George S. Patton
+  "Lead, follow, or get out of the way.", // Thomas Paine
   "Take calculated risks. That is quite different from being rash.", // George S. Patton
   "A man can be happy with any woman, as long as he does not love her.", // Oscar Wilde
   "To love oneself is the beginning of a lifelong romance.", // Oscar Wilde
@@ -112,7 +112,7 @@ let listOfQuotes = [
   "If a man empties his purse into his head, no one can take it from him.", // Benjamin Franklin
   "Skepticism is the first step on the road to philosophy.", // Dennis Diderot
   "But truly, if I were not Alexander, I wish I were Diogenes.", // Alexander the Great after Diogenes told him to 'stand out of my light'
-  "Arrogant men are successful because of hard work, wise men are successful because of sheer luck.",
+  "Arrogant men are successful because of hard work; Wise men are successful because of sheer luck.",
   "Is God willing to prevent evil, but not able? Then he is not omnipotent. Is he able, but not willing? Then he is malevolent. Is he both able and willing? Then whence cometh evil? Is he neither able nor willing? Then why call him God?", // Epicurus
   "Being alone is a difficult path. If you cannot accept your plight, you will forever be in hell.",
   "If I had seven peasants, I could make seven lords. But if I had seven lords, I could not make ONE Holbein!", // Henry VIII
@@ -123,7 +123,7 @@ let listOfQuotes = [
   "In a Recession, there is no future beyond the current quarter.",
   "Salute the rank, not the man.",
   "Don't vote, it just encourages the bastards.", // PJ O'rourke
-  //"Yippee ki-yay motha-fucka.", // Bruce Willis in Die Hard
+  "Yippee ki-yay motha-fucka.", // Bruce Willis in Die Hard
   "A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyze a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly. Specialization is for insects.", // Robert Heinlein
   "Don't handicap your children by making their lives easy.", // Robert Heinlein
   "Almost any sect, cult, or religion will legislate its creed into law if it acquires the political power to do so.", // Robert Heinlein
@@ -160,7 +160,7 @@ let listOfQuotes = [
   "The art of American business practice is a firm handshake, a fake smile, and a vacuum in your wallet.",
   "If someone is selling you something, they're lying somewhere.",
   "When life gives you lemons? Don't make lemonade. Make life take the lemons back! Get mad! 'I don't want your damn lemons! What am I supposed to do with these?' Demand to see life's manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I'm the man who's going to burn your house down! With the lemons!", // J.K. Simmons as Cave Johnson in Portal 2
-  "Science isn't about WHY. It's about WHY NOT. Why is so much of our science dangerous? Why not marry safe science if you love it so much.", // J.K. Simmons as Cave Johnson in Portal 2
+  "Science isn't about why. It's about why not!", // J.K. Simmons as Cave Johnson in Portal 2
   "To leave behind a thing of beauty, something like this, something that a people will marvel over centuries from now; That's worth living for.", // Rufus Sewell in the TV show Victoria
   "The only way to settle down, is by settling.",
   "When should a man marry? A young man not yet, an elder man not at all.", // Sir Franics Bacon
@@ -176,6 +176,14 @@ let listOfQuotes = [
   "Who am I to deny an audience with the King?",
   "We all work for someone.", // John Ham in Mad Men
   "Born into wealth; Died like everybody else.",
+  "Having sacrificed my youth to my father and my maturity to the State, I believe I have the right to dispose of my old age.", // Frederick the Great
+  "History is the version of past events that people have decided to agree upon.", // Napoleon Bonaparte
+  "There is no such thing as the wrong side of history.", 
+  "Never do today what you can put off 'til tomorrow.", // William Pulteney
+  "A noisy man is always in the right.", // William Cowper
+  "The more comfort, the less courage there is.", // Prince Aleksandr V. Suvorov
+  "If you marry, you will regret it; if you do not marry, you will also regret it; if you marry or do not marry, you will regret both; Laugh at the world's follies, you will regret it, weep over them, you will also regret that; laugh at the world's follies or weep over them, you will regret both; whether you laugh at the world's follies or weep over them, you will regret both. Believe a woman, you will regret it, believe her not, you will also regret that; believe a woman or believe her not, you will regret both; whether you believe a woman or believe her not, you will regret both. Hang yourself, you will regret it; do not hang yourself, and you will also regret that; hang yourself or do not hang yourself, you will regret both; whether you hang yourself or do not hang yourself, you will regret both. This, gentlemen, is the sum and substance of all philosophy.", // Søren Kierkegaard
+  "If you need a friend, get a dog.", // Michael Douglas as Gordon Gecko in Wall Street
   
 ];
 
@@ -198,6 +206,8 @@ function AppendToHtml(listOfStrings, title) {
   let appendTdNode = quoteTable.children[0].children[1].children[0];
   appendTdNode.innerText = listOfStrings[index];
 
+    
+  /*
   // Count of remaining quotes
   let quotesPickedList = localStorage.getItem(title).split(",").length;
   let quoteCountWithZeroes = AddLeadingZeroes(quotesPickedList);
@@ -209,7 +219,8 @@ function AppendToHtml(listOfStrings, title) {
   let trailingZeroString = "Quote #" + AddLeadingZeroes(nonZeroIndex);
 
   // Add Quote counting string to DOM
-  appendCount.innerText = remainingQuotes + " - " + trailingZeroString;
+  appendCount.innerText = remainingQuotes + " - " + trailingZeroString; 
+  */
 }
 
 /**

@@ -54,6 +54,10 @@ td > a > button {
   font-size: 12px;
 }
 
+button > div > img, button > img {
+  height: 14px;
+}
+
 /************************ Id's ************************/
 #otherSites {
   text-align: center;

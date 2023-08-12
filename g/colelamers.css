@@ -124,6 +124,15 @@ button > div > img, button > img {
     line-height: 16px;
 }
 
+.fullDivWidth {
+  width: 100%;
+}
+
+.thirtyPercentColumn {
+  width: 30%;
+  text-align: center;
+}
+
 /************************ Rules ************************/
 
 /* Adjusts image sizes for mobile */

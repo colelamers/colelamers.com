@@ -55,7 +55,7 @@
                 <td>
                   <div class="mediaCenterChildTag">
                     <div class="row fullDivWidth">
-                      <button class="glowButton" onclick="AppendToHtml(listOfQuotes, 'Quote')">
+                      <button class="glowButton" onclick="RunRandomizers()">
                         <span style="color:black;">
                           Cole Lamers
                         </span>
@@ -65,13 +65,7 @@
                 </td>
               </tr>
               <tr>
-                <!-- Presets the TD node so I don't need JS to do it -->
-                <td class="quotesTableData"> 
-                  &#169; ColeLamers.com - All Rights Reserved - Opinions expressed are solely my own
-                </td>
-              </tr>
-              <tr>
-                <td class="quotesTableData">
+                <td class="quotesTableData colorPeriwinkle">
                   Après moi, le déluge.
                 </td>
               </tr>
@@ -80,17 +74,12 @@
           <!-- DangerZone
             ––––––––––––––––––––––––––––––––––––––––––––––––––-->
           <div class="mediaCenterChildTag">
-            <div>
-              <div class="row fullDivWidth">
-              <img src="./g/yo.png" class="squareImg" alt="picture of me">
-                <!--<video style="width:100%;" width="480" height="360" controls>
-                  <source src="./g/dschingiskhan.webm" type="video/webm">
-                </video>-->
+            <div>       
+              <span>Die vielen Gesichter von Cole Lamers.</span>
+              <div id="imgDiv" class="row fullDivWidth">
               </div>
             </div>
           </div>
-
-
 
           <div class="mediaCenterChildTag">
             <div class="row fullDivWidth">
@@ -170,7 +159,6 @@
                 </a>
               </div>
             </div>
-              <!--
             <div class="mediaCenterChildTag">
               <div class="row fullDivWidth">
                 <a href="https://www.instagram.com/colelamers/"><button>
@@ -182,7 +170,6 @@
                 </a>
               </div>
             </div>
-              -->
                <!--
             <div class="mediaCenterChildTag">
               <div class="row fullDivWidth">
@@ -305,9 +292,18 @@
                 -->
               </div>
             </div>
-            <!--
-              Events Table End
-            -->
+              <table>
+                <tr>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <!-- Presets the TD node so I don't need JS to do it -->
+                  <td class="quotesTableData colorCoral"> 
+                    &#169; 1994-20XX - ColeLamers.com - All Rights Reserved - Opinions expressed are solely my own
+                  </td>
+                </tr>
+              </table>
           </div>
         </div>
       </div>
@@ -317,6 +313,7 @@
     <!-- End Document
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <script>
+  // todo 3; one day split up the quote and speaker into separate items? objects or array
   let listOfQuotes = [
     "If the rule you followed, brought you to this, of what use was the rule?", // Javier Bardem in No Country For Old Men
     "Three may keep a secret if two of them are dead.", // Ben Franklin
@@ -346,14 +343,14 @@
     "Never attribute to malice that which is adequately explained by incompetence.",
     "Same rules apply.", // Bruce Robertson, Filth
     "Whoever appeals to the law against his fellow man is either a fool or a coward. Whoever cannot take care of himself without that law is both. For a wounded man shall say to his assailant 'If I live, I will kill you; if I die, you are forgiven.' Such is the rule of honor.", // Lamb of God, Omerta
-    "If you stare into the abyss, the abyss stares back.", // Nietzsche 
+    "If you stare into the abyss, the abyss stares back.", // Friedrich Nietzsche 
     "The only thing worse than not getting what you want, is getting it.", // Sonya Sones
     "Youth is wasted on the young because they have nothing else to spend.",
     "Repeat a lie long enough and you'll suddenly forget the truth.",
     "He who has done nothing worthy of criticism is of no consequence.", // Similar to "If you have no critics you'll likely have no success." from Malcolm X
-    "Tithes cannot save those from which the ostracism itself has created.",
+    "Tithes cannot save those from which the ostracism that which itself has created.", // Commentary on non-profit grift where funds do not go to help people, but to fund non-profit employees
     "I forget my past because others will remember it for me.",
-    "Find your zero; stay away from it.",
+    "Find your zero; Stay away from it.",
     "First time home buyers always forget to factor in the cost of owning a home.",
     "Life has no purpose. Everything will be forgotten. Nothing you do matters.",
     "Happy wife, happy life; But a single man's got a plan.",
@@ -414,7 +411,6 @@
     "The most cost-effective martial art is a new pair of running shoes.",
     "Praise the God of all, drink the wine, and let the world be the world.", // French proverb, popularized by the Tudors show
     "There's no innovation without disobedience.", // French proverb
-    "Soft men are needed for strong men to cushion their fall.",
     "Some people die at 25 and aren't buried until 75.", // Benjamin Franklin
     "Religion is what keeps the poor from murdering the rich.", // Napoleon Bonaparte
     "Prayer and meditation does not solve your problems, it just wastes the time that could be used to solve your problems.",
@@ -516,7 +512,7 @@
     "The rational man in an irrational world sooner or later is declared the irrational one for being too rational.",
     "What fine weather today! Can't choose whether to drink tea or to hang myself.", // Anton Chekov
     "A lot of you cared, just not enough.", // Jay Asher
-    "The thought of suicide is a great consolation: by means of it one gets through many a dark night.", // Nietzsche
+    "The thought of suicide is a great consolation: by means of it one gets through many a dark night.", // Friedrich Nietzsche
     "A man can only devote himself to his ambitions or family, for one will always consume the other.",
     "There's a reason the road less traveled is so.",
     "My only regret is I could not have been wiser sooner.",
@@ -545,12 +541,12 @@
     "A cult is a religion with no political power.", // Tom Wolfe
     "Nothing exists but you. And you are but a thought.", // Mark Twain
     "Whether God exists or does not exist, He has come to rank among the most sublime and useless truths.", // Denis Diderot
-    "You will never be anything but a philosopher—and what is that but an ass who plagues himself all his life, that he may be talked about after he is dead.", // Madame Rousseau to Jean le Rond d'Alembert
+    "You will never be anything but a philosopher. And what is that but an ass who plagues himself all his life, that he may be talked about after he is dead.", // Madame Rousseau to Jean le Rond d'Alembert
     "Bachelors know more about women than married men; if they didn't, they'd be married too.", // H.L. Mencken
     "My whole life I sought wisdom, and I often wonder how much happier I would have been had I not.",
     "The petty bourgeois is spiritless...devoid of imagination, as the petty bourgeois always is, he lives within a certain orbit of trivial experiences as to how things come about, what is possible, what usually happens, no matter whether he is a tapster or a prime minister. This is the way the petty bourgeois has lost himself and God.", // Søren Kierkegaard
     "Get rich or die tryin.", // 50 Cent
-    "The tyranny of petty criminals is just as much a human rights abuse as a tyranny of government. For the rights with the state allow a trial in front of the government and peers. A criminal does not give any recourse to fight back from their injustice. Therefore the greater tragedy is letting a criminal roam freely preventing other people from exerting their rights, making the state complicit by tolerating such behavior.",
+    "The tyranny of petty criminals is just as much a human rights abuse as a tyranny of government. For the rights with the state allow a trial in front of the government. A criminal does not give any recourse to fight back from their injustice. Therefore the greater tragedy is letting a criminal roam freely preventing other people from exerting their rights, making the state complicit by tolerating such behavior.",
     "What good are rights if one cannot naturally invoke them and another can forcefully revoke them? Rights, therefore, are as much a cultural precedent reinforced only by the laws that are enforced.",
     "Religions are not a theological concept. They're what you're punished for denying in spite of contradictory evidence.",
     "Follow the money.", // All the President's Men
@@ -562,7 +558,6 @@
     "The significance of my progress is directly correlated with the delta of silence between vulgarities.",
     "If fortune tellers knew the future, why would they waste their time on poor gullible people instead of the stock market? It is likely a self fulfilling prophecy in that they foresee more suckers paying them directly than payouts from the market.",
     "It's not a problem, until it is.",
-    "You better lawyer up, asshole. Cause I'm not coming back for thirty percent, I'm coming back for everything.", // Andrew Garfield in The Social Network
     "Hunger is the best spice.",
     "There's never a good time to enter the market.",
     "The ability to speak does not make you intelligent.", // Liam Neeson in Star Wars
@@ -590,7 +585,6 @@
     "Bist du ein Gott?",
     "There's a sucker born every minute.", // P. T. Barnum
     "People don't forget.", // Johna Hill from superbad
-    "Women bond face to face; Men bond shoulder to shoulder.",
     "For men, the game of life is a simply a staring contest into the abyss. The real winners are not those who survive the longest, but those who are capable of making it out unscathed.",
     "Everybody hates a contrarian, no matter how right they are.",
     "You are only allowed to criticize the old gods.",
@@ -598,29 +592,50 @@
     "Why you crying?", // A hispanic woman I worked with who said this to me every time I complained
     "I reject your reality, and substitute my own.", // Adam Savage
     "I didn't get this far because I'm a moron.",
-    "Luck, Destiny, Fate, Providence, Chance, Fortune, Probability, Odds.",
-    "Give me evidence and I have a justification. Give me perception and I have an indication. Give me nothing and I have only wonder.",
+    "Luck, Destiny, Fate, Providence, Chance, Fortune, Probability, Odds. She has many names. And I know her well.",
+    "Give me evidence and I have justification. Give me perception and I have indication. Give me nothing and I have only wonder.",
     "Après moi, le déluge.", // Madame de Pompadour
     "Stoics are people who read and do what other people tell them will make them wise instead of pursuing what they've empirically observed.",
     "I trust your effort, but not your intent.",
     "Nobody is farther from reality than a child raised with wealth greater than most peasants.",
     "Das Schicksal mischt die Karten, und wir spielen.", // Arthur Schopenhauer
-    "Wir denken selten an das, was wir haben, aber immer an das, was uns fehlt.", // Arthur Schopenhauer
     "A soldier will fight long and hard for a bit of coloured ribbon.", // Napoleon Bonaparte
     "If I had to choose a religion, the sun as the universal giver of life would be my god.", // Napoleon Bonaparte
     "Men are moved by two levers only: fear and self interest.", // Napoleon Bonaparte
     "The most painful state of being is remembering the future, particularly the one you'll never have.", // Søren Kierkegaard
-    "In addition to my other numerous acquaintances, I have one more intimate confidant… My melancholy is the most faithful mistress I have known - no wonder, then, that I return the love.", // Søren Kierkegaard
+    "In addition to my other numerous acquaintances, I have one more intimate confidant...My melancholy is the most faithful mistress I have known - no wonder, then, that I return the love.", // Søren Kierkegaard
     "Love is the expression of the one who loves, not of the one who is loved. Those who think they can love only the people they prefer do not love at all. Love discovers truths about individuals that others cannot see.", // Søren Kierkegaard
     "To cheat oneself out of love is the most terrible deception; it is an eternal loss for which there is no reparation, either in time or in eternity.", // Søren Kierkegaard
     "Truth always rests with the minority, and the minority is always stronger than the majority, because the minority is generally formed by those who really have an opinion, while the strength of a majority is illusory, formed by the gangs who have no opinion - and who, therefore, in the next instant (when it is evident that the minority is the stronger) assume its opinion...while truth again reverts to a new minority.", // Søren Kierkegaard
     "The self-assured believer is a greater sinner in the eyes of God than the troubled disbeliever.", // Søren Kierkegaard
-    "James Cameron doesn't do what James Cameron does for James Cameron. James Cameron does what James Cameron does because James Cameron is...James Cameron!", // James Cameron in south park
-    "Now, what you see here is, at least in summer, or in the fall, one of the nicest views of Ljublijana. It looks like Paris, green leaves, etc. On both sides, nice old houses, nothing special. Eh, but you are wrong! This river here is the official geographical limit between: Balkan and Mittle Europa. So, beware! On the other side: horror, oriental despotism, women get beaten, get raped, and like it. On this side: Europe, civilization, women get beaten, and raped but don't like it. So; Balkan; Mittle Europa. Don't forget it!", // Slavoj Žižek
-    "People who don't believe in luck clearly have never been unlucky!",
     "Man will believe in a god with no evidence but dispute the outcome of a dice roll.",
-    "People who suffer from surviroship bias tend not to have any established understanding in either math or probability."
-  ];
+    "Release me from the chains of an unrequited love!",
+    "The future is built upon the infrastructure of the past.",
+    "Wenn ich sterben muss, dann würde ich sterben. Es hat keinen Sinn, dagegen anzukämpfen.",
+    "Idle hands are the devils workshop.", // Proverbs 16:27; St. Jerome quote "Engage in some occupation, so that the devil may always find you busy."
+    "The gentry cannot fathom the concept of natural selection because their wealth protects them from what would logically happen.",
+    "Throughout my life, I've continually met characters of a sound mind, detracted from the bourgeois charade. It has brought great comfort knowing I was never alone.",
+    "At a younger age, I had to believe I was wrong in order to survive. With more experience, I've come to find out I was always right.",
+    "When the people shall have nothing more to eat, they will eat the rich.", // Jean-Jacques Rousseau
+    "Many of the bourgeoisie cannot comprehend why a person would despise living simply because they have never experienced true suffering.",
+    "God tends to show the most favor in people with money.",
+    "Wenn du lange in einen Abgrund blickst, blickt der Abgrund auch in dich hinein.", // Friedrich Nietzsche
+    "The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.", // Friedrich Nietzsche
+    "He who would be a courtier under a king, is almost certain to be a demagogue in a democracy.", // James Fenimore Cooper
+    "From each according to his inabilities, to each according to his deeds.", // Play on the Karl Marx quote "From each according to his abilities, to each according to his needs."
+    "A lot of people thought it was me everyone at the 'Factory' was hanging around, that I was some kind of big attraction that everyone came to see, but that's absolutely backward: it was me who was hanging around everyone else. I just paid the rent, and the crowds came simply because the door was open. People weren't particularly interested in seeing me; they were interested in seeing each other. They came to see who came.", // Andy Warhol
+    "I was afraid that without the crazy, druggy people around jabbering away and doing their insane things, I would lose my creativity. After all, they'd been my total inspiration since '64, and I didn't know if I could make it without them.", // Andy Warhol
+    "Sex is a lie.",
+    "I am perpetually fraught with melancholy, trapped between the idiosyncracies of my beliefs and the realities of life.",
+    "Relationships my conscience desires, my wisdom does not.",
+    "Behind those eyes; Lies.",
+    "Deep down, I am an artist too afraid to starve.",
+];
+// todo 3;
+function RunRandomizers(){
+  AppendToHtml();
+  GetRandomImage(84); // number == indexes; n + 1 cause of 0 based
+}
   /**
    * Makes an HTML node and appends it to the DOM with 
    * some extra css.
@@ -631,11 +646,41 @@
    * @param | string | "titleUsed" |
    * Title used for html.
    */
-  function AppendToHtml(listOfStrings, title) {
-    let index = RandomizeLocalStorageArrayIndexes(listOfStrings, title);
-    let quoteTable = document.getElementsByClassName("quotesTableData")[1];
-    quoteTable.innerText = listOfStrings[index];
+  function AppendToHtml() {
+  //function AppendToHtml(listOfStrings, title) {
+    let index = Math.floor((Math.random() * listOfQuotes.length));//RandomizeLocalStorageArrayIndexes(listOfStrings, title);
+    let quoteTable = document.getElementsByClassName("quotesTableData")[0];
+    if (quoteTable.innerText.indexOf(listOfQuotes[index]) > -1){
+      AppendToHtml();
+    }
+    else{
+      quoteTable.innerText = listOfQuotes[index];
+    }
   }
+  /**
+   * Makes an HTML node and appends it to the DOM live as an actual html node.
+   * 
+   * @param | int | 93 |
+   * The "length/count" based index of an item because random is 0 based.
+   */
+  function GetRandomImage(intIndex) {
+    let imgDomNode = document.getElementById("squareshot");
+    let index = Math.floor((Math.random() * intIndex));
+    let imgTag = "<img id=\"squareshot\" src=\"./squareshots/" + index + 
+                 ".png\" class=\"squareImg\" alt=\"picture of me\">";
+    let parser = new DOMParser();
+    let doc = parser.parseFromString(imgTag, 'text/html').body;
+    if (imgDomNode !== null){
+      imgDomNode.remove();
+    }
+    document.getElementById("imgDiv").append(doc.childNodes[0]);
+    // Recursion to resolve the same index twice. Inefficient, but meh...
+    if (imgDomNode !== null){
+      if (imgDomNode.src.indexOf(index) > -1){
+        GetRandomImage(intIndex);
+      }
+    }
+  };
   /**
    * Adds leading zeroes to a numerical value.
    * Currently hardcoded for hundreds and tens place.
@@ -682,7 +727,7 @@
     let lsList = localStorage.getItem(title);
     let index = Math.floor((Math.random() * listOfStrings.length));
     // Empty and reset local storage or grab new random index
-    if (lsList != null || lsList != undefined) {
+    if (lsList !== null || lsList !== undefined) {
       let splitList = lsList.split(",");
       // Empty localstorage if all options have been selected
       if (splitList.length >= listOfStrings.length) {
@@ -711,6 +756,6 @@
     localStorage.setItem(title, lsList);
     return index;
   }
-  AppendToHtml(listOfQuotes, "Quote");
+  RunRandomizers();
 </script>
 </html>

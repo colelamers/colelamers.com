@@ -112,11 +112,14 @@ button > div > img, button > img {
   text-align: center;
 }
 
-.quotesTableData,
-.mediaSubtitle,
-.archiveKeywordsSection {
+.colorCoral {
   color: coral;
 }
+
+.colorPeriwinkle {
+  color: #5688ff;
+}
+
 
 .poem > p {
     text-align: center;
